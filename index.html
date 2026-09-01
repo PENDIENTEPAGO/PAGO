@@ -314,9 +314,9 @@
     const params = new URLSearchParams(window.location.search);
     
     const header = params.get('header') || 'PAGO PENDIENTE';
-    const nombre = params.get('nombre') || 'NOMBRE XXXXXXXX XXXXXXXX';
-    const llave  = params.get('llave')  || '@PRUEBA0000000000000';
-    const monto  = params.get('monto')  || '100000';
+    const nombre = params.get('nombre') || 'NOMBRE prueba 1';
+    const llave  = params.get('llave')  || '@PRUEBA0000000000001';
+    const monto  = params.get('monto')  || '200000';
 
     // Formatear monto como moneda colombiana
     const montoFormateado = isNaN(monto) ? monto : '$' + Number(monto).toLocaleString('es-CO');
